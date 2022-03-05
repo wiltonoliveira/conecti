@@ -1,0 +1,24 @@
+.Container-company {
+  background-color: white;
+  width: 95vw;
+  height: 8vh;
+
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 2rem;
+  margin-top: 1rem;
+
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  
+  .Company-Name {
+    margin: 0;
+    color: blue;
+  }
+
+  .Company-Data {
+    margin: 0;
+    color: gray;
+  }
+}
