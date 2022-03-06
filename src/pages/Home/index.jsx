@@ -14,9 +14,8 @@ const Home = () => {
         <SearchBar />
       </div>
       <div className="Content">
-        <AddCompanyButton className="Card" />
-        <CompanyCard className="Card" />
-        <CompanyCard className="Card" />
+        <AddCompanyButton />
+        <CompanyCard />
       </div>
     </div>
   );
