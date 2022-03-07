@@ -5,8 +5,8 @@ import AddCompanyButton from "../../container/AddCompanyButton";
 import CompanyCard from "../../container/CompanyCard";
 import AddCompanyModal from "../AddCompanyModal";
 import EditCompanyModal from "../EditCompanyModal";
-import "./style.scss";
 import { useDataCompany } from "../../providers/dataCompany";
+import "./style.scss";
 
 const Home = () => {
   const [isAddModalOpen, setIsAddModalOpen] = React.useState(false);

@@ -1,13 +1,13 @@
 import React from "react";
 import { Modal, Form } from "react-bootstrap";
-import "bootstrap/dist/css/bootstrap.min.css";
 import { Button, Stack } from "@mui/material";
 import api from "../../config/api";
 import { useDataCompany } from "../../providers/dataCompany";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function EditCompanyModal(props) {
   const { company, setCompany } = useDataCompany();
-  
+
   const handleSubmit = (e) => {
     e.preventDefault();
     api.update("/clients", company);
@@ -19,7 +19,6 @@ function EditCompanyModal(props) {
 
   return (
     <>
-      {console.log(props.showModal)}
       <Modal show={props.showModal}>
         <Modal.Header>Editar Empresa</Modal.Header>
         <Modal.Body>

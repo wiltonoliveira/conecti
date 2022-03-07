@@ -1,8 +1,8 @@
 import React from "react";
 import { Modal, Form } from "react-bootstrap";
-import "bootstrap/dist/css/bootstrap.min.css";
 import { Button, Stack } from "@mui/material";
 import api from "../../config/api";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function createId() {
   return (

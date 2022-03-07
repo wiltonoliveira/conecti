@@ -8,7 +8,7 @@ import { ReactComponent as LogoConecti } from "../../assets/images/logo-conecti.
 import { AuthContext } from "../../providers/auth";
 
 const Header = () => {
-  const user  = React.useContext(AuthContext);
+  const { user } = React.useContext(AuthContext);
 
   return (
     <div className="Menu">
