@@ -81,7 +81,7 @@ function AddCompanyModal(props) {
               />
             </Form.Group>
 
-            <Stack spacing={2} direction="row">
+            <Stack spacing={2} direction="row" justifyContent={'flex-end'}>
               <Button variant="contained" color="error" onClick={props.closeModal}>
                 Voltar
               </Button>

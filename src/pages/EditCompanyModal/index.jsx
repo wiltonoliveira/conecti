@@ -3,18 +3,14 @@ import { Modal, Form } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Button, Stack } from "@mui/material";
 import api from "../../config/api";
+import { useDataCompany } from "../../providers/dataCompany";
 
 function EditCompanyModal(props) {
-  const [company, setCompany] = React.useState({
-    id: props.company.id,
-    name: props.company.name,
-    email: props.company.email,
-    cnpj: props.company.cnpj,
-  });
-
+  const { company, setCompany } = useDataCompany();
+  
   const handleSubmit = (e) => {
     e.preventDefault();
-    api.post("/clients", company);
+    api.update("/clients", company);
   };
 
   const setInput = (newValue) => {
@@ -23,8 +19,9 @@ function EditCompanyModal(props) {
 
   return (
     <>
+      {console.log(props.showModal)}
       <Modal show={props.showModal}>
-        <Modal.Header>Adicionar Nova Empresa</Modal.Header>
+        <Modal.Header>Editar Empresa</Modal.Header>
         <Modal.Body>
           <Form onSubmit={handleSubmit}>
             <Form.Group className="mb-3" controlId="formBasicEmail">

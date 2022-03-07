@@ -6,27 +6,35 @@ import CompanyCard from "../../container/CompanyCard";
 import AddCompanyModal from "../AddCompanyModal";
 import EditCompanyModal from "../EditCompanyModal";
 import "./style.scss";
+import { useDataCompany } from "../../providers/dataCompany";
 
 const Home = () => {
   const [isAddModalOpen, setIsAddModalOpen] = React.useState(false);
+  const { showEditModal, setShowEditModal } = useDataCompany();
   const showModal = () => {
     setIsAddModalOpen(true);
   };
   const hideModal = () => {
     setIsAddModalOpen(false);
   };
+  const closeEditModal = () => {
+    setShowEditModal(false);
+  };
 
   return (
     <div className="Container">
       <Header />
-      <div className="Search-Company">
-        <SearchBar />
-      </div>
+
+      <SearchBar />
+
       <div className="Content">
         <AddCompanyButton openModal={showModal} />
         <CompanyCard />
         <AddCompanyModal showModal={isAddModalOpen} closeModal={hideModal} />
-        {/* <EditCompanyModal /> */}
+        <EditCompanyModal
+          showModal={showEditModal}
+          closeModal={closeEditModal}
+        />
       </div>
     </div>
   );
