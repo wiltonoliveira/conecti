@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# CONECti
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- ATENÇÃO: Esse projeto não é um produto oficial da CONECti. Se trata meramente de um exercício.
 
-## Available Scripts
+## Para Rodar o Projeto
 
-In the project directory, you can run:
+#### Requisitos
+- Node.js >=16.10
+- Yarn
+
+### `yarn`
+Instale as dependências.
 
 ### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Inicie a aplicação
+Acesse [http://localhost:3000](http://localhost:3000) para ver no seu navegador.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Tecnologias utilizadas
 
-### `yarn test`
+- React.Js (v 17.0.2)
+- Bootstrap 5
+- Sass
+- Axios
+- Material UI (v 5.4.4)
+- Material Icons (v 5.4.4)
+- React Router Dom (v 6.2.2)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Problemas no desenvolvimento
 
-### `yarn build`
+- Apesar de ser um CRUD simples, não foi possível completar a tarefa devido a um erro relacionado a CORS.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![CORS Error](https://blog.container-solutions.com/hs-fs/hubfs/redscreenshot.png?width=2760&name=redscreenshot.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Houveram tentativas de contornar o problema das mais diversas formas, porém sem sucesso.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<h1>
+    <a href="https://pt.stackoverflow.com/questions/374207/access-to-xmlhttprequest-has-been-blocked-by-cors-policy">🔗 Access to XMLHttpRequest has been blocked by CORS policy</a>
+</h1>
 
-### `yarn eject`
+<h1>
+    <a href="https://stackoverflow.com/questions/57009371/access-to-xmlhttprequest-at-from-origin-localhost3000-has-been-blocked">🔗 Access to XMLHttpRequest at '...' from origin 'localhost:3000' has been blocked by CORS policy</a>
+</h1>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<h1>
+    <a href="https://medium.com/@dtkatz/3-ways-to-fix-the-cors-error-and-how-access-control-allow-origin-works-d97d55946d9">🔗 3 Ways to Fix the CORS Error</a>
+</h1>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<h1>
+    <a href="https://cursos.alura.com.br/forum/topico-erro-cors-policy-98330">🔗 erro CORS policy</a>
+</h1>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<h1>
+    <a href="https://www.npmjs.com/package/cors">🔗 CORS - NPM</a>
+</h1>
